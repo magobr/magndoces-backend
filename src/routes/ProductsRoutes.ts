@@ -6,6 +6,10 @@ const ProductsRoutes = express.Router();
 
 const Product = new ProductController;
 
-ProductsRoutes.post("/", Product.store)
+ProductsRoutes.post("/", Product.store);
+ProductsRoutes.get("/", Product.find);
+ProductsRoutes.get("/:id", Product.find);
+ProductsRoutes.put("/:id", Product.update);
+ProductsRoutes.delete("/:id", Product.delete);
 
 export {ProductsRoutes};

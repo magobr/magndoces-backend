@@ -12,4 +12,4 @@ COPY . .
 
 EXPOSE $PORT
 
-CMD ["npm", "run", "dev_docker"]
+CMD ["npm", "run", "dev"]
